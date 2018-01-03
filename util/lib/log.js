@@ -2,7 +2,6 @@ const log4js = require('log4js');
 const utilLog = log4js.getLogger('[ERROR_LOG]');
 
 const operate = require('./operate.js');
-const object = require('./object.js');
 
 /**
  * 记录日志

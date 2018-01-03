@@ -86,7 +86,7 @@ if (dbConfig.store) {
     }catch(err){
         console.log(err);
     }
-    const maxage = ENV_CONFIG.cookie.maxAge || 86400000/24/2;
+    const maxage = (ENV_CONFIG.cookie && ENV_CONFIG.cookie.maxAge) || 86400000/24/2;
     app.use(session({
         // 设置 cookie 中，保存 session 的字段名称，默认为 connect.sid
         name: '_S',
