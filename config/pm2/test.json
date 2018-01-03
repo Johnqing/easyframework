@@ -1,0 +1,19 @@
+{
+  "apps": [
+    {
+      "name": "easyframework",
+      "cwd": "/easyframework",
+      "script": "server/server.js",
+      "exec_mode": "cluster",
+      "node_args": "--harmony",
+      "env": {
+        "NODE_ENV": "test"
+      },
+      "error_file": "/dev/null",
+      "out_file": "/dev/null",
+      "pid_file": "/dev/null",
+      "max_memory_restart": "800M",
+      "instances": "max"
+    }
+  ]
+}
